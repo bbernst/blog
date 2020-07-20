@@ -1,5 +1,6 @@
+papermill
+ipykernel
+jupyter
 pandas==1.0.5
 altair==4.1.0
 vega==3.4.0
-ipykernel==5.3.2
-jupyter==1.0.0
