@@ -23,7 +23,7 @@ jobs:
 
     - name: Comment With Link To Workflow On Issue
       if: github.event_name == 'issues'
-      uses: actions/github-script@2.0.0
+      uses: actions/github-script@v2.0.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
@@ -75,7 +75,7 @@ jobs:
 
     - name: Create an issue if notebook update failure occurs
       if: github.event_name == 'schedule' && steps.update_nb.outputs.error_bool == 'true'
-      uses: actions/github-script@2.0.0
+      uses: actions/github-script@v2.0.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
@@ -122,7 +122,7 @@ jobs:
 
     - name: Comment on issue if failure in updating notebooks
       if: github.event_name == 'issues' && steps.update_nb.outputs.error_bool == 'true'
-      uses: actions/github-script@2.0.0
+      uses: actions/github-script@v2.0.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
@@ -140,7 +140,7 @@ jobs:
 
     - name: Comment on issue if failure in workflow
       if: failure() && github.event_name == 'issues'
-      uses: actions/github-script@2.0.0
+      uses: actions/github-script@v2.0.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
@@ -156,7 +156,7 @@ jobs:
 
     - name: Comment on and close issue if successful
       if: github.event_name == 'issues' && steps.update_nb.outputs.error_bool == 'false'
-      uses: actions/github-script@2.0.0
+      uses: actions/github-script@v2.0.0
       with:
         github-token: ${{secrets.GITHUB_TOKEN}}
         script: |
