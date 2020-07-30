@@ -64,15 +64,6 @@ jobs:
       run: |
         ./_action_files/run_notebooks.sh
 
-    # - name: save notebooks & images
-    #   run: |
-    #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
-    #     git config --global user.name "github-actions[bot]"
-    #     git add images/
-    #     git add _notebooks/data/
-    #     git commit -m'[bot] refresh notebooks'
-    #     git push -f
-
     - name: Create an issue if notebook update failure occurs
       if: github.event_name == 'schedule' && steps.update_nb.outputs.error_bool == 'true'
       uses: actions/github-script@v2.0.0
@@ -90,6 +81,14 @@ jobs:
       env:
         ERROR_STRING: ${{ steps.update_nb.outputs.error_str }}
         RUN_ID: ${{ github.run_id	}}
+
+    - name: push updated notebooks
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+        git add _notebooks/
+        git commit -m '[bot] refresh notebooks'
+        git push
 
     - name: convert notebooks and word docs to posts
       uses: ./_action_files
