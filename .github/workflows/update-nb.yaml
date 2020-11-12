@@ -1,7 +1,7 @@
 name: Update Notebooks And Refresh Page
 on:
   schedule:
-    - cron: '30 22 * * *'
+    - cron: '0 9 * * *'
   issues:
     types: [opened]
 
