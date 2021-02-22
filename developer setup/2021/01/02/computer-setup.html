@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>New computer setup | ben’s blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="New computer setup" />
+<meta name="author" content="bbernst" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Notebooks and posts to share" />
+<meta property="og:description" content="Notebooks and posts to share" />
+<link rel="canonical" href="https://bbernst.github.io/blog/developer%20setup/2021/01/02/computer-setup.html" />
+<meta property="og:url" content="https://bbernst.github.io/blog/developer%20setup/2021/01/02/computer-setup.html" />
+<meta property="og:site_name" content="ben’s blog" />
+<meta property="og:image" content="https://bbernst.github.io/blog/images/computer-setup/laptop.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-01-02T00:00:00-06:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-01-02T00:00:00-06:00","author":{"@type":"Person","name":"bbernst"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bbernst.github.io/blog/developer%20setup/2021/01/02/computer-setup.html"},"image":"https://bbernst.github.io/blog/images/computer-setup/laptop.png","description":"Notebooks and posts to share","@type":"BlogPosting","url":"https://bbernst.github.io/blog/developer%20setup/2021/01/02/computer-setup.html","headline":"New computer setup","dateModified":"2021-01-02T00:00:00-06:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://bbernst.github.io/blog/feed.xml" title="ben's blog" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-172710437-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">ben&#39;s blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">New computer setup</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-01-02T00:00:00-06:00" itemprop="datePublished">
+        Jan 2, 2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">bbernst</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      10 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/blog/categories/#developer setup">developer setup</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/bbernst/blog/tree/master/_notebooks/2021-01-02-computer-setup.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          
+          
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Goal">Goal </a></li>
+<li class="toc-entry toc-h1"><a href="#Applications">Applications </a></li>
+<li class="toc-entry toc-h1"><a href="#Command-line">Command line </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Conda">Conda </a></li>
+<li class="toc-entry toc-h2"><a href="#Nix">Nix </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Python-environments">Python environments </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Conda">Conda </a></li>
+<li class="toc-entry toc-h2"><a href="#Nix">Nix </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#R">R </a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-01-02-computer-setup.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Goal">
+<a class="anchor" href="#Goal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Goal<a class="anchor-link" href="#Goal"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This post is mostly designed to help my future self remember what I like about my developer setup for a new (osx) laptop. Every time I need to do this, at work or on a personal computer, I find that the software or my preferences have changed enough to make the previous list not as automatic as it could be and it forces me to take the time to re-research everything I need. Maybe this is a good idea to be doing once in a while, but why not have a nice set of defaults and edit from there if needed. Theoretically, this could be one script that I pull and run, but for now it'll be a list of links, scripts, and commentary.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Applications">
+<a class="anchor" href="#Applications" aria-hidden="true"><span class="octicon octicon-link"></span></a>Applications<a class="anchor-link" href="#Applications"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In the click-and-drag into the Applications folder style of installing, there are a few apps that help me with basic navigation and usage.</p>
+<p>1. <a href="https://www.irradiatedsoftware.com/sizeup/">SizeUp</a></p>
+<p>I've always used some form of window manager and sizeup works well -- no need to learn new keyboard shortcuts</p>
+<p>2. <a href="https://keepingyouawake.app/">KeepingYouAwake</a></p>
+<p>Another simple app to prevent sleep via a toggle in the menu</p>
+<p>3. <a href="https://code.visualstudio.com/">VSCode</a></p>
+<p>For a while, I was on sublime text, then atom, and now to vscode. The extensions make a big difference for me and are also the most variable part of this so I'd guess this will change going forward but for now the follow up steps for my "full" vscode install are:</p>
+
+<pre><code>1. Install code in PATH via installer
+2. Add atom shortcuts
+3. Some useful extensions (for python)
+    a. GitLens
+    b. Python
+    c. Pyright
+    d. Rainbow CSV
+    e. indent-rainbow
+    f. Python Indent
+</code></pre>
+<p>There's one more step in vscode to choose the python interpreter so remember to set this after getting some python envs setup below.</p>
+<p>4. <a href="https://iterm2.com/">iTerm2</a></p>
+<p>Most comfortable with iterm over terminal</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Command-line">
+<a class="anchor" href="#Command-line" aria-hidden="true"><span class="octicon octicon-link"></span></a>Command line<a class="anchor-link" href="#Command-line"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This section looks into the rest of the developer setup and is a bit denser.</p>
+<p>1. <a href="https://brew.sh/">brew</a></p>
+<p>A must have for osx</p>
+<p>2. <a href="https://ohmyz.sh/#install">ohmyzsh</a></p>
+<p>Always used osx default bash, but found this after the switch to zsh -- it's honestly much better and easier to use.</p>
+<p>3. <a href="https://github.com/romkatv/powerlevel10k">powerlevel10k</a></p>
+<p>Powerlevel is a really good theme and I'll likely keep using whatever the newest version is. For the easiest install, follow the install instructions for ohmyzsh then install the font via iterm. Also, we're at the point where we do need to change some settings manually:</p>
+
+<pre><code>1. Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`
+2. Run `p10k configure`
+</code></pre>
+<p>4. Add aliases to <code>~/.zshrc</code></p>
+<p>While we're in <code>~/.zshrc</code> we can add a few aliases that are useful to have.</p>
+
+<pre><code>1. `alias gpu='git push -u origin HEAD'` -- so you don't need to set remotes on every new branch
+2. `alias gb='git --no-pager branch'` -- to make branches easier to copy
+3. `alias jupnb='jupyter notebook'`
+</code></pre>
+<p>5. <a href="https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh">zsh-syntax-highlighting</a></p>
+<p>Zsh syntax highlighting is useful to have and is best installed with the ohmyzsh way instead of with brew. Also remember to put this as the last plugin in <code>~/.zshrc</code> which the repo will also mention to do.</p>
+<p>6. <a href="https://github.com/tmux/tmux/wiki">tmux</a></p>
+<p>Tmux as a command line window manager helps keep the number of tabs down and I install using <code>brew install tmux</code>. To get the most out of this, it's best to also install some tmux packages so that it can reboot itself without losing sessions when iterm is closed.</p>
+
+<pre><code>1. Install [tpm](https://github.com/tmux-plugins/tpm) to get .tmux.conf 
+2. [tmux resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+3. [tmux continuum](https://github.com/tmux-plugins/tmux-continuum)
+4. Add to .tmux.conf (in the middle, following the tpm examples)
+    a. `set -g default-terminal "screen-256color"` -- fixes a bug I had with tmux and ohmyzsh settings
+    b. `set -g @plugin 'tmux-plugins/tmux-resurrect'`
+    c. `set -g @plugin 'tmux-plugins/tmux-continuum'`
+    d. `set -g @continuum-restore 'on'`
+</code></pre>
+<p>7. <a href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">New github ssh</a></p>
+<p>An obvious one, but set up a new ssh to avoid signing in over and over</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conda">
+<a class="anchor" href="#Conda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conda<a class="anchor-link" href="#Conda"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>1. <a href="https://docs.conda.io/en/latest/">Conda</a></p>
+<p>I consider conda my default and quick python environment tool, it just works. There are a few gotchas so I use a simple script, <code>install_miniconda.sh</code>, to make it easier to remember. First, make it executable with <code>chmod +x install_miniconda.sh</code> then run with <code>./install_miniconda.sh</code>.</p>
+
+<pre><code>curl -o ${HOME}/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+shasum -a 256 ${HOME}/miniconda.sh
+CONDA_PATH="${HOME}/miniconda3"
+bash ${HOME}/miniconda.sh -b -p ${CONDA_PATH}
+rm ${HOME}/miniconda.sh
+eval "$(${CONDA_PATH}/bin/conda shell.zsh hook)"
+conda init zsh
+conda config --set auto_activate_base false</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Nix">
+<a class="anchor" href="#Nix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nix<a class="anchor-link" href="#Nix"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>1. <a href="https://nixos.org/download.html">Nix</a></p>
+<p>Nix is a really powerful environment management tool. It's not really fair to have this presented in comparison to conda since it does so much more, but for my purposes they end up being pretty similar. Nix creates environments "all the way down" installing everything from scratch which means you can guarantee envs that work today will work tomorrow. Or put another way, envs that work on your computer will work on your colleague's computer. This is a really strong claim and not even docker can guarantee that nothing under the hood will change between builds off the same dockerfile (nix can even make the docker images directly).</p>
+<p>However, it's not the most user friendly or well documented and building nix envs takes a while. If, for whatever reason, something isn't working with nix then it'll likely be a pain to figure out and drag you into the parts of your computer you hoped to ignore. Also, if you want to deploy with nix then you have to deal with rebuilding the envs everywhere, which again, takes a while. There are ways to address all of this, but you have to be ready to dig in -- it really comes down to a trade off between ease and stability. Case and point, for now, installing nix on osx is a bit of a mess but you can follow the steps in either of the first two links then run the final command:</p>
+
+<pre><code>1. https://nixos.org/manual/nix/stable/#sect-macos-installation -- the official documentation
+2. https://dubinets.io/installing-nix-on-macos-catalina/ -- an easier guide
+3. `sh &lt;(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume` -- the install command</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Python-environments">
+<a class="anchor" href="#Python-environments" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python environments<a class="anchor-link" href="#Python-environments"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are a lot of opinions and ways to do this, but I'll cover just two -- the conda way and the nix way.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conda">
+<a class="anchor" href="#Conda" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conda<a class="anchor-link" href="#Conda"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For conda, I manage <code>environment.yml</code> files for each env. The nice parts about using an env yml file is you can keep the definition of python together with the choice/versions of your packages. Without going too much into the packages, which will change depending on the project anyway, the main sections are as follows.</p>
+<p>1. environment.yml</p>
+
+<pre><code>name: py38
+channels:
+  - defaults
+  - conda-forge
+  - ...
+dependencies:
+  - python=3.8 # python version
+  - pip
+  - conda-build
+  - ...
+  - pip:
+    - autopep8
+    - flake8
+    - mypy
+    - pytest
+    - ...</code></pre>
+<p>2. Then make the env</p>
+
+<pre><code>source ${HOME}/.zshrc
+conda env create -f environment.yml
+# pip list --format=freeze &gt; requirements.txt
+# ^^ creates a requirements.txt (always a good idea)
+# conda env export --no-builds | grep -v "^prefix: " &gt; environment_versioned.yml
+# ^^ creates a versioned file (always a good idea)</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Nix">
+<a class="anchor" href="#Nix" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nix<a class="anchor-link" href="#Nix"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>With nix, you can also create a <code>default.nix</code> file which handles the entire install (python and specific env) together. You can fully use nix to manage all packages, but I still prefer to use virtualenvs (essentially an env within an env) since it's easier and faster for development work and packages are still pinnable with versions. Also, I find that nix sometimes drags behind a bit which isn't something I want to wait for.</p>
+<p>1. requirements.txt</p>
+<p>This looks just like normal requirements.txt and is called exactly the same way. One note, I use a little script that creates a requirements_versioned.txt from an existing env and requirements.txt file (relies on <code>from pip._internal.operations import freeze</code> and <code>freeze.freeze()</code>). This is to get around the fact that <code>pip list --format freeze</code> creates an enormous list and I usually only want to see the specified packages/versions. It makes it easier to manage and the only risk is a package changes a dependency version without bumping to a new version itself, so you can use the full <code>pip list</code> for more stability.</p>
+<p>2. default.nix</p>
+<p>First, in full:</p>
+
+<pre><code># nix-channel --update nixpkgs
+# ^^ Update nixpkgs occasionally
+
+let
+  # https://nixos.wiki/wiki/FAQ/Pinning_Nixpkgs
+  # pkgs = import &lt;nixpkgs&gt; {};
+  pkgs = import (builtins.fetchTarball {
+    # Descriptive name to make the store path easier to identify
+    name = "nixpkgs-2021-01-03";
+    # Find the current commit hash with:
+    # `curl "https://releases.nixos.org/nixpkgs/nixpkgs-$(nix-instantiate --eval -E '(import &lt;nixpkgs&gt; {}).lib.version' | tr -d '"')/git-revision" &amp;&amp; echo`
+    url = "https://github.com/nixos/nixpkgs/archive/2080afd039999a58d60596d04cefb32ef5fcc2a2.tar.gz";
+    # Hash obtained using: `nix-prefetch-url --unpack &lt;url&gt;`
+    sha256 = "0i677swvj8fxfwg3jibd0xl33rn0rq0adnniim8jnp384whnh8ry";
+  }) {};
+
+  pyInputs = with pkgs.python38Packages; [
+    pkgs.python38
+    virtualenv
+    virtualenvwrapper
+    pip
+  ];
+
+in pkgs.stdenv.mkDerivation rec {
+  name = "py38";
+  env_home = "Development";
+  repo = "base_envs";
+  req_location = "requirements_versioned.txt";
+
+  buildInputs = pyInputs;
+
+  LD_LIBRARY_PATH = "${pkgs.stdenv.lib.makeLibraryPath [ pkgs.stdenv.cc.cc.lib ]}";
+
+  shellHook = ''
+    # set SOURCE_DATE_EPOCH so that we can use python wheels
+    SOURCE_DATE_EPOCH=$(date +%s)
+
+    # ENV_HOME
+    export ENV_HOME="$HOME/${env_home}/${repo}"
+    export PYTHONPATH="$PYTHONPATH:$ENV_HOME"
+
+    # use virtualenvwrapper to manage envs
+    export WORKON_HOME="$ENV_HOME/Envs"
+    mkdir -p $WORKON_HOME
+    source $(command -v virtualenvwrapper.sh)
+
+    # install
+    mkvirtualenv ${name}
+    workon ${name}
+    python3 -m pip install -r "$ENV_HOME/${req_location}"
+
+    # optional
+    python $ENV_HOME/jupyter_rename.py --repo=${repo} --name=${name}
+    python $ENV_HOME/requirements_versioned.py --repo=${repo}
+    pip list --format=freeze &gt; requirements_versioned_full.txt
+
+    # prompt that says the derivation
+    PS1="\[\033[1;34m\][nix-shell-${name}:\w]\n\$ \[\033[0m\]"
+  '';
+}</code></pre>
+<hr>
+<p>This is dense because it's a different language and functional programming looks different than python. The idea is that we're running one function <code>mkDerivation</code> and defining a few variables first within the <code>let</code>. First, get nixpkgs. If we don't care about pinning nix (we do) then we could use:</p>
+
+<pre><code>pkgs = import &lt;nixpkgs&gt; {};</code></pre>
+<p>But I don't want nix changing between builds so it gets pinned using:</p>
+
+<pre><code>pkgs = import (builtins.fetchTarball {
+  name = "nixpkgs-2021-01-03";
+  url = "https://github.com/nixos/nixpkgs/archive/2080afd039999a58d60596d04cefb32ef5fcc2a2.tar.gz";
+  sha256 = "0i677swvj8fxfwg3jibd0xl33rn0rq0adnniim8jnp384whnh8ry";
+}) {};</code></pre>
+<p>Then, you choose the python version and also get pip and virtualenv since they are needed to make the environment:</p>
+
+<pre><code>pyInputs = with pkgs.python38Packages; [
+  pkgs.python38
+  virtualenv
+  virtualenvwrapper
+  pip
+];</code></pre>
+<p>Now <code>mkDerivation</code> is run which has a few parameters like <code>name</code>, <code>buildInputs</code>, and an optional <code>shellHook</code> which is important for a number of settings. <code>name</code> is the env name and I propagate that around to a few other places (like making sure my jupyter notebooks say which env they are, via a small script). <code>buildInputs</code> is the list of packages to  include in the environment (note this can include anything nix knows about so that extends past just python and can include R, haskell, etc.). <code>shellHook</code> should look very familiar since it's how you'd create your virtualenv and install packages normally -- this hook is in bash even though we use zsh above. When managing multiple default.nix files (likely in different repos), then I also make sure to edit the following variables appropriately:</p>
+
+<pre><code>name = "py38";
+env_home = "Development";
+repo = "base_envs";
+req_location = "requirements_versioned.txt";</code></pre>
+<p>Finally, to build this environment you simply run</p>
+
+<pre><code>nix-shell default.nix</code></pre>
+<p>then wait.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="R">
+<a class="anchor" href="#R" aria-hidden="true"><span class="octicon octicon-link"></span></a>R<a class="anchor-link" href="#R"> </a>
+</h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As a last very brief aside, what if we wanted to also install R into our same environment? Without nix, you'd go over to the R website and download directly but then it's separate from our developer env and not easily shareable. With conda, apparently this is doable, but I haven't been able to find a clean example. With nix, it's actually really easy since mixing languages one of the things nix does best. I've rarely seen good multi language environment guides, but if you're willing to go down the path of using nix then there are nice wins at the end. If I add:</p>
+
+<pre><code>rInputs = with pkgs.rPackages; [
+  pkgs.R
+  data_table
+  tidyverse
+];</code></pre>
+<p>and change to <code>buildInputs = pyInputs ++ rInputs;</code> (++ means concatenate the lists) then we're all set.</p>
+<p>To rebuild this environment, you rerun</p>
+
+<pre><code>nix-shell default.nix</code></pre>
+<p>then wait.</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="bbernst/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/developer%20setup/2021/01/02/computer-setup.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Notebooks and posts to share</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/bbernst" title="bbernst"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/bbernst" title="bbernst"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
